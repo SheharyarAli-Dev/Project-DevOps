@@ -6,13 +6,13 @@ It was developed as part of a Software Construction and Development (SCD) course
 real-world deployment challenges, containerization with Docker, and workflow automation using Docker Compose.
 
 ## Features
-- 🔍 **Search Records**  Case-insensitive search by name or ID
-- 🔃 **Sort Records**  Sort by name or creation date (ascending/descending)
-- 📤 **Export Data**  Export all records to a formatted `.txt` file with header metadata
-- 💾 **Automatic Backup**  Auto-generates timestamped JSON backups on every add/delete
-- 📊 **Vault Statistics**  Displays total records, longest name, earliest/latest dates, and last modified time
-- 🍃 **MongoDB Integration**  Replaced in-memory database with persistent MongoDB
-- 🔐 **Environment Variables**  Sensitive config managed via `.env` file
+- 🔍 **Search Records** :  Case-insensitive search by name or ID
+- 🔃 **Sort Records** : Sort by name or creation date (ascending/descending)
+- 📤 **Export Data** : Export all records to a formatted `.txt` file with header metadata
+- 💾 **Automatic Backup** : Auto-generates timestamped JSON backups on every add/delete
+- 📊 **Vault Statistics** : Displays total records, longest name, earliest/latest dates, and last modified time
+- 🍃 **MongoDB Integration** : Replaced in-memory database with persistent MongoDB
+- 🔐 **Environment Variables** : Sensitive config managed via `.env` file
 
 ## Tech Stack
 - Node.js
@@ -21,11 +21,11 @@ real-world deployment challenges, containerization with Docker, and workflow aut
 - Git (feature branch workflow)
 
 ## Project Structure
-- `backend/` — Node.js application source
-- `backups/` — Auto-generated backup files
-- `Dockerfile` — Backend container definition
-- `docker-compose.yml` — Multi-service orchestration (backend + MongoDB)
-- `.env` — Environment configuration (not committed)
+- `backend/` : Node.js application source
+- `backups/` : Auto-generated backup files
+- `Dockerfile` : Backend container definition
+- `docker-compose.yml` : Multi-service orchestration (backend + MongoDB)
+- `.env` : Environment configuration (not committed)
 
 ## Getting Started
 \```bash
