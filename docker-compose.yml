@@ -1,0 +1,37 @@
+services:
+  scd-mongo:
+    image: mongo:6
+    container_name: scd-mongo
+    restart: always
+    environment:
+      - MONGO_INITDB_DATABASE=scdVault
+    volumes:
+      - scd-mongo-data:/data/db
+    networks:
+      - scd-private-network
+    ports:
+      - "27017:27017"
+
+  scd-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: scd-backend
+    restart: always
+    depends_on:
+      - scd-mongo
+    environment:
+      - MONGO_URI=mongodb://scd-mongo:27017/scdVault
+      - PORT=3000
+    networks:
+      - scd-private-network
+    ports:
+      - "3000:3000"
+
+networks:
+  scd-private-network:
+    driver: bridge
+
+volumes:
+  scd-mongo-data:
+

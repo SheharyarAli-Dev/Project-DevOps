@@ -1,0 +1,8 @@
+Vault Export
+Date: 11/22/2025, 3:38:09 PM
+Total Records: 3
+File: export.txt
+
+1. ID: 1763801759529 | Name: Ali Raza | Value: 101 | Created: N/A
+2. ID: 1763801781254 | Name: Sheharyar | Value: 102 | Created: N/A
+3. ID: 1763804672900 | Name: Teacher | Value: 103 | Created: N/A
